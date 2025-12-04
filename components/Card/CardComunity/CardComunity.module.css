@@ -1,0 +1,20 @@
+.mainCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px #ABBED133;
+    border-radius: 8px;
+    gap: 8px;
+    padding: 24px 16px;
+    max-width: 300px;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}

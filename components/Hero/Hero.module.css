@@ -1,0 +1,88 @@
+.sectionHero {
+    background: var(--neutral-silver);
+}
+
+.conSection {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.boxContentHero {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.textGreenH1 {
+    color: var(--color-primary);
+}
+
+.heroDescription {
+    color: var(--grey);
+}
+
+.imageHero {
+    width: 391px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.layoutHero {
+    width: 100%;
+    display: flex;
+}
+
+.btnRegister {
+    background: var(--color-primary);
+    border-radius: 4px;
+    padding: 14px 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.btnRegister:hover{
+ background: #42be46;
+ box-shadow: 1px 0px 10px #30303033;
+}
+.boxImage {
+    width: 50%;
+}
+
+@media (max-width: 1280px) {
+
+    .imageHero {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .boxImage {
+        width: 100%;
+    }
+
+    .conSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .layoutHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .imageHero {
+        width: 250px;
+
+    }
+}
+
+@media (max-width: 640px) {}

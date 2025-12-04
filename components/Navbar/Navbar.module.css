@@ -1,0 +1,277 @@
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainnav {
+    padding: 30px 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.headerShawdown {
+    box-shadow: 1px 2px 3px #9999993d;
+}
+
+.header .groupHeader {
+    background: var(--neutral-silver);
+}
+
+.boxMainNav {
+    width: 100%;
+    margin: auto;
+}
+
+.boxMainNav {
+    padding: 0 105px;
+}
+
+.boxLogo {
+    min-width: 154px;
+}
+
+.boxLinkPage {
+    width: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.boxLinkPage .listItemLink {
+    padding: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.boxBtn {
+    display: flex;
+    gap: 14px;
+}
+
+.boxLinkPage .listItemLink:hover,
+.boxLinkPage .listItemLink:active {
+    font-weight: 500;
+}
+
+.btnSignUp {
+    background: var(--primary);
+    color: white;
+}
+
+.btnSignUp,
+.btnLogin {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.spinIcon {
+    display: none;
+}
+
+.iconHam {
+    color: var(--primary);
+}
+.active{
+    font-weight: 700 !important;
+}
+.btnLogin:hover{
+    color:var(--color-primary);
+}
+.btnSignUp{
+    transition: all ease 0.5;
+}
+.btnSignUp:hover{
+ background: #42be46;
+ box-shadow: 1px 0px 10px #30303033;
+}
+@media (max-width: 1280px) {
+    .boxLogo {
+        min-width: 120px;
+    }
+
+    .boxLinkPage {
+
+        gap: 25px;
+    }
+
+    .boxMainNav {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .boxMainNav {
+        padding: 0 40px;
+    }
+
+    .header {
+        top: 10px;
+    }
+
+    .header .groupHeader {
+        background: var(--neutral-silver);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        box-shadow: 2px 3px 2px #c4c4c469;
+    }
+
+    .mainnav {
+        padding: 20px 0;
+    }
+
+    .spinIcon {
+        display: block;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-left: auto;
+        z-index: 60;
+        transition: 0.25s ease;
+    }
+
+    .navPanel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateX(-6px);
+        transition: 0.4s ease;
+        z-index: 59;
+        height: 100vh;
+    }
+
+    .mainnav.isOpen .navPanel {
+        z-index: 1000;
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+
+
+    .boxLinkPage {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 8px 0;
+        margin-bottom: unset;
+        margin-top: unset;
+    }
+
+    .listItemLink {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+
+    .boxBtn {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding-top: 8px;
+        border-top: 1px solid #f2f2f2;
+        margin-bottom: auto;
+        margin-top: 40px;
+    }
+
+    .btnLogin,
+    .btnSignUp {
+        width: 100%;
+    }
+
+    .backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: 40;
+    }
+
+    .icon-burger {
+        color: var(--primary);
+    }
+
+    .spinIcon {
+        animation: spin360 0.6s ease;
+    }
+
+    .header {
+        transition: transform 0.25s ease;
+    }
+
+    .headerLift {
+        transform: translateY(-100px);
+    }
+
+    @keyframes spin360 {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .boxMainNav {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .boxMainNav {
+        padding: 0 14px;
+    }
+    .logomain{
+        width: 100px;
+    }
+
+}

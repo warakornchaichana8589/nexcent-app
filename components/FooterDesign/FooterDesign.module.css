@@ -1,0 +1,79 @@
+.sectionPixel {
+    background: white;
+}
+
+.imageHero {
+    width: 391px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.layoutHero {
+    width: 100%;
+    display: flex;
+}
+
+.btnRegister {
+    background: var(--color-primary);
+    border-radius: 4px;
+    padding: 14px 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    margin-right: auto;
+}
+.btnRegister:hover{
+ background: #42be46;
+ box-shadow: 1px 0px 10px #30303033;
+}
+.boxContentHero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.boxImage {
+    width: 100%;
+}
+
+.imageHero {
+    width: 442px;
+    max-width: 100%;
+}
+
+.conSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+
+    .layoutHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .boxContentHero {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imageHero {
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 640px) {}

@@ -1,0 +1,130 @@
+.sectionTestimonial {
+    background: var(--neutral-silver);
+}
+
+.boxImage {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxAspec {
+    width: 326px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 8px 0 16px #ABBED166;
+    border-radius: 8px;
+}
+
+.imageTestimonial {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.layoutHero {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.boxContentHero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.conSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.textCon {
+    font-weight: 500;
+}
+
+.h4ColorGreen {
+    color: var(--color-primary);
+}
+
+.meetAllLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    margin-left: auto;
+    white-space: nowrap;
+}
+.meetAllLink::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;           
+  width: 0%;
+  height: 2px;       
+  background: #4CAF4F;
+  transition: width 0.25s ease;
+}
+.meetAllLink:hover::after{
+  width: 100%;
+}
+
+.iconAndLink {
+    display: flex;
+    gap: 20px;
+}
+
+.groupIcons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+
+    .boxContentHero {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .layoutHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .iconAndLink {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meetAllLink {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 640px) {}

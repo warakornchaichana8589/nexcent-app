@@ -1,0 +1,39 @@
+.sectionCommunity{
+    background: white;
+}
+.conCommunity {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contentCommunity {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.headText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+.groupCard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:24px
+
+}
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+    
+  
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}

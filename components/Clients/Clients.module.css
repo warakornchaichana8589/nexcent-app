@@ -1,0 +1,47 @@
+.clientsLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.groupLogo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+ 
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    .groupLogo {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+}

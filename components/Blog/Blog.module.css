@@ -1,0 +1,33 @@
+.section {
+    background: white;
+}
+
+.blogGroup {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding-top: 16px;
+    overflow: scroll;
+}
+
+.conBlog {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.boxTitleBlog {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 628px;
+    max-width: 100%;
+    gap: 8px;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}
