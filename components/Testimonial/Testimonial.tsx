@@ -31,7 +31,7 @@ export default function Testimonial() {
                 <div className={styles.item}><Image src='/images/logo-bran/Logo-5.png' alt='logo' width={48} height={48} className={styles.imageLogo} /></div>
               </div>
               <Link href="/" className={`${styles.meetAllLink}`}>Meet all customers <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M16 16L19.2929 12.7071C19.6834 12.3166 19.6834 11.6834 19.2929 11.2929L16 8M19 12L5 12" stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M16 16L19.2929 12.7071C19.6834 12.3166 19.6834 11.6834 19.2929 11.2929L16 8M19 12L5 12" stroke="#4CAF4F" strokeWidth="1.5" stroke-linecap="round" />
               </svg></Link>
             </div>
 
